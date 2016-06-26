@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="loginstylesheet.css">
+
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form" ng-controller="exchangifyController"> 
+      <!-- ng-controller="loginController"> -->
+        <form action="/" class="login-form" id="myLogin">
+          <input type="text" placeholder="username" ng-model="username"/>
+          <input type="password" placeholder="password" ng-model="password"/>
+          <button type="button" ng-click="submit()">login</button>
+          <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
